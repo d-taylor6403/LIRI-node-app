@@ -17,8 +17,7 @@ A video demonstration can be viewed [here](https://drive.google.com/file/d/19Un4
     *FS
 
 *Takes in user selection using Inquirer
-*Uses the selection to access each command type:
-    ..*(Concert, Song, Movie, Do What It Says)
+*Uses the selection to access each command type: (Concert, Song, Movie, Do What It Says)
 *When user types a command without any input, default values are used
 
 ## Instructions
