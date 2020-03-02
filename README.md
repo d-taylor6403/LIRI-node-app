@@ -9,12 +9,12 @@ Liri is a command line node app that will search Spotify for songs, Bands in Tow
 A video demonstration can be viewed [here](https://drive.google.com/file/d/19Un4mVWf3Vp65kl3mjwFVvCnSsChy3vu/view)
 
 ## Overview of the App
-*Requires all Node Package Installtions including:
-    *Inquirer
-    *Node-spotify-api
-    *Axios
-    *Moment
-    *FS
++Requires all Node Package Installtions including:
+    +Inquirer
+    +Node-spotify-api
+    +Axios
+    +Moment
+    +FS
 
 *Takes in user selection using Inquirer
 *Uses the selection to access each command type: (Concert, Song, Movie, Do What It Says)
