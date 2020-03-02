@@ -10,14 +10,15 @@ A video demonstration can be viewed [here](https://drive.google.com/file/d/19Un4
 
 ## Overview of the App
 #### Requires all Node Package Installtions including:
-    +Inquirer
-    +Node-spotify-api
-    +Axios
-    +Moment
-    +FS
+* Inquirer
+* Node-spotify-api
+* Axios
+* Moment
+* FS
 
 #### Takes in user selection using Inquirer
-#### Uses the selection to access each command type: (Concert, Song, Movie, Do What It Says)
+#### Uses the selection to access each command type: 
+* (Concert, Song, Movie, Do What It Says)
 #### When user types a command without any input, default values are used
 
 ## Instructions
@@ -28,14 +29,6 @@ A video demonstration can be viewed [here](https://drive.google.com/file/d/19Un4
 5. Select the desired search option
 6. Enter the desired search term
 
-## Command Example Screenshots
-![Image of Example 1](https://github.com/d-taylor6403/LIRI-node-app/blob/master/Images/CML-Example1.PNG)
-![Image of Example 2](https://github.com/d-taylor6403/LIRI-node-app/blob/master/Images/CML-Concert-Example1.PNG)
-![Image of Example 3](https://github.com/d-taylor6403/LIRI-node-app/blob/master/Images/CML-Song-Example1.PNG)
-![Image of Example 4](https://github.com/d-taylor6403/LIRI-node-app/blob/master/Images/CML-Movie-Example1.PNG)
-![Image of Example 5](https://github.com/d-taylor6403/LIRI-node-app/blob/master/Images/CML-Mixed-Example.PNG)
-![Image of Example 6](https://github.com/d-taylor6403/LIRI-node-app/blob/master/Images/CML-Log-Example1.PNG)
-
 ## Technologies Used in App
 * Axios NPM Package -> Promise based HTTP client for the browser and node.js
 * Inquirer NPM Package -> A collection of common interactive command line user interfaces
@@ -44,3 +37,12 @@ A video demonstration can be viewed [here](https://drive.google.com/file/d/19Un4
 * Node-Spotify-API -> A simple to use API library for the Spotify REST API
 * OMDb API -> A RESTful web service to obtain movie information, all content and images on the site
 * Bands In Town API -> Displays read-only access to artist info and artist events
+
+## Command Example Screenshots
+![Image of Example 1](https://github.com/d-taylor6403/LIRI-node-app/blob/master/Images/CML-Example1.PNG)
+![Image of Example 2](https://github.com/d-taylor6403/LIRI-node-app/blob/master/Images/CML-Concert-Example1.PNG)
+![Image of Example 3](https://github.com/d-taylor6403/LIRI-node-app/blob/master/Images/CML-Song-Example1.PNG)
+![Image of Example 4](https://github.com/d-taylor6403/LIRI-node-app/blob/master/Images/CML-Movie-Example1.PNG)
+![Image of Example 5](https://github.com/d-taylor6403/LIRI-node-app/blob/master/Images/CML-Mixed-Example.PNG)
+![Image of Example 6](https://github.com/d-taylor6403/LIRI-node-app/blob/master/Images/CML-Log-Example1.PNG)
+
