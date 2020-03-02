@@ -30,7 +30,18 @@ A video demonstration can be viewed [here](https://drive.google.com/file/d/19Un4
 6. Enter the desired search term
 
 ## Command Example Screenshots
-![Image of Example 1]
-![Image of Example 2]
-![Image of Example 3]
-![Image of Example 4]
+![Image of Example 1](https://github.com/d-taylor6403/LIRI-node-app/blob/master/Images/CML-Example1.PNG)
+![Image of Example 2](https://github.com/d-taylor6403/LIRI-node-app/blob/master/Images/CML-Concert-Example1.PNG)
+![Image of Example 3](https://github.com/d-taylor6403/LIRI-node-app/blob/master/Images/CML-Song-Example1.PNG)
+![Image of Example 4](https://github.com/d-taylor6403/LIRI-node-app/blob/master/Images/CML-Movie-Example1.PNG)
+![Image of Example 5](https://github.com/d-taylor6403/LIRI-node-app/blob/master/Images/CML-Mixed-Example.PNG)
+![Image of Example 6](https://github.com/d-taylor6403/LIRI-node-app/blob/master/Images/CML-Log-Example1.PNG)
+
+## Technologies Used in App
+* Axios NPM Package -> Promise based HTTP client for the browser and node.js
+* Inquirer NPM Package -> A collection of common interactive command line user interfaces
+* Moment -> A lightweight JavaScript date library for parsing, validating, manipulating, and formatting dates
+* DotEnv -> Dotenv is a zero-dependency module that loads environment variables from a .env file into process.env
+* Node-Spotify-API -> A simple to use API library for the Spotify REST API
+* OMDb API -> A RESTful web service to obtain movie information, all content and images on the site
+* Bands In Town API -> Displays read-only access to artist info and artist events
