@@ -41,15 +41,15 @@ inquirer.prompt([
             axios.get("http://rest.bandsintown.com/artists/" + answer.concertArtist + "/events?app_id=codingbootcamp")
             .then(function (response){
                 for (var i = 1; i<5; i++){
-                    var jsonconcertData = response.data
+                    
                     var concertData = [
-                        "Concert Date: " + moment(jsonconcertData[i].datetime).format("MM/DD/YYYY"),
-                        "Venue Name: " + jsonconcertData[i].venue.name,
-                        "Venue Location: " + jsonconcertData[i].venue.city + "," + jsonconcertData[i].venue.region
+                        "Concert Date: " + moment(response.data[i].datetime).format("MM/DD/YYYY"),
+                        "Venue Name: " + response.data[i].venue.name,
+                        "Venue Location: " + response.data[i].venue.city + "," + response.data[i].venue.region
                     ].join("\n");
 
                     //Append concertData and the divider to log.txt, print concertData to console
-                    fs.appendFile("log.txt", jsonconcertData + divider, function(err){
+                    fs.appendFile("log.txt", answer.concertArtist + ":" + concertData + divider, function(err){
                         if (err) {
                             throw err;
                         }
@@ -75,7 +75,7 @@ inquirer.prompt([
                query: answer.songTitle,
            }, function(err, response){
 
-               //var jsonspotifyData = response.data
+
                var spotifyData = [
                 "Artist: " + response.tracks.items[6].artists[0].name,
                 "Song: " + response.tracks.items[6].name,
@@ -107,20 +107,20 @@ inquirer.prompt([
         .then(function(answer) {
             axios.get("http://www.omdbapi.com/?t=" + answer.movieTitle + "&y=&plot=short&apikey=trilogy")
             .then(function(response){
-                var jsonmovieData= response.data
+                
                 var movieData= [
-                    "Title: " + jsonmovieData.Title,
-                    "Year: " + jsonmovieData.Year,
-                    "IMDB Rating: " + jsonmovieData.Ratings[0].Value,
-                    "Rotten Tomatoes Rating: " + jsonmovieData.Ratings[1].Value,
-                    "Country: " + jsonmovieData.Country,
-                    "Language: " + jsonmovieData.Language,
-                    "Plot: " + jsonmovieData.Plot,
-                    "Actors/Actresses: " + jsonmovieData.Actors
+                    "Title: " + response.data.Title,
+                    "Year: " + response.data.Year,
+                    "IMDB Rating: " + response.data.Ratings[0].Value,
+                    "Rotten Tomatoes Rating: " + response.data.Ratings[1].Value,
+                    "Country: " + response.data.Country,
+                    "Language: " + response.data.Language,
+                    "Plot: " + response.data.Plot,
+                    "Actors/Actresses: " + response.data.Actors
                 ].join("\n");
 
                 //Append movieData and the divider to log.txt. print movieData to console
-                fs.appendFile("log.txt", jsonmovieData + divider, function(err){
+                fs.appendFile("log.txt", movieData + divider, function(err){
                     if (err){
                         throw err;
                     }
