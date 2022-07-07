@@ -21,7 +21,7 @@
     "axios": "^0.19.2",
     "dotenv": "^8.2.0",
     "inquirer": "^7.0.5",
-    "moment": "^2.24.0",
+    "moment": "^2.29.4",
     "node-spotify-api": "^1.1.1",
     "request": "^2.88.2"
   }
